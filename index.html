@@ -14,9 +14,16 @@
     </header>
     <main>
       <form autocomplete="off" id="starter-form">
-        <input type="number" min="0" placeholder="starter" id="starter-input" />
+        <label for="#starter-input">Enter your Starter</label>
+        <input type="number" min="0" placeholder="type..." id="starter-input" />
         <input type="submit" value="click" />
       </form>
+      <div class="flour-container">
+        <p id="flour-quantity"></p>
+      </div>
+      <div class="water-container">
+        <p id="water-quantity"></p>
+      </div>
     </main>
     <script src="./src/index.js"></script>
   </body>

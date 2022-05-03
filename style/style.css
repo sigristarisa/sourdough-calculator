@@ -1,0 +1,110 @@
+/* FONT */
+@import url("https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"); /*font-family: 'Asap Condensed', sans-serif;*/
+@import url("https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap"); /*font-family: 'Gravitas One', cursive;*/
+
+/* COLOR */
+html {
+  --main-clr: #0391d3e3;
+  --sub-clr: #f2f2f2;
+  --text-clr: #e8000f;
+  --sub-text-clr: #deb642;
+}
+
+body {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  place-items: center;
+}
+
+main {
+  width: 390px;
+  height: 844px;
+  padding: 0 20px;
+  display: grid;
+  grid-template-rows: 0.5fr 5fr 1fr 5fr 0.5fr;
+  justify-items: center;
+  background-color: var(--sub-clr);
+}
+
+.starter-container {
+  border-top: var(--text-clr) 4px solid;
+  border-bottom: var(--text-clr) 4px solid;
+  display: grid;
+  place-items: center;
+}
+
+#starter-input {
+  width: 100%;
+  border: none;
+  color: var(--text-clr);
+  background-color: var(--sub-clr);
+}
+
+#starter-input[type="number"] {
+  text-align: center;
+  font-family: "Gravitas One", cursive;
+  font-size: 28px;
+}
+
+#starter-input[type="number"]::placeholder {
+  font-family: "Gravitas One", cursive;
+  color: var(--text-clr);
+}
+
+.click[type="number"]::placeholder {
+  font-family: "Gravitas One", cursive;
+  color: var(--sub-text-clr);
+}
+
+.flour-quantity-container,
+.water-quantity-container {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-clr);
+  font-family: "Gravitas One", cursive;
+}
+
+.flour-text-container {
+  display: grid;
+  align-items: end;
+}
+.ingredient-text {
+  width: 100px;
+  margin: 0;
+  color: var(--text-clr);
+  font-family: "Asap Condensed", sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.flour-text {
+  border-bottom: var(--text-clr) 2px solid;
+}
+
+.water-text {
+  border-top: var(--text-clr) 2px solid;
+}
+
+img {
+  width: 120px;
+  height: 120px;
+}
+
+.icon-container {
+  width: 200px;
+  height: 200px;
+  margin: 32px;
+  background-color: white;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+h2 {
+  font-family: "Gravitas One", cursive;
+  font-size: 32px;
+  color: var(--text-clr);
+}

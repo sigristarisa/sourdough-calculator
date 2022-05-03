@@ -9,22 +9,36 @@
     <title>Sourdough Calculator</title>
   </head>
   <body>
-    <header>
-      <h1>Sourdough Calculator</h1>
-    </header>
     <main>
-      <form autocomplete="off" id="starter-form">
-        <label for="#starter-input">Enter your Starter</label>
-        <input type="number" min="0" placeholder="type..." id="starter-input" />
-        <input type="submit" value="click" />
-      </form>
-      <div class="flour-container">
-        <p id="flour-quantity"></p>
+      <div class="flour-text-container">
+        <p class="ingredient-text flour-text">Flour</p>
       </div>
-      <div class="water-container">
-        <p id="water-quantity"></p>
+      <div class="flour-quantity-container">
+        <h2 id="flour-quantity"></h2>
+        <div class="icon-container">
+          <img src="./assets/flour.png" alt="flour" />
+        </div>
+      </div>
+      <div class="starter-container">
+        <form autocomplete="off" id="starter-form">
+          <input
+            type="number"
+            min="0"
+            placeholder="Starter g"
+            id="starter-input"
+          />
+        </form>
+      </div>
+      <div class="water-quantity-container">
+        <div class="icon-container">
+          <img src="./assets/pitcher.png" alt="pitcher" />
+        </div>
+        <h2 id="water-quantity"></h2>
+      </div>
+      <div class="water-text-container">
+        <p class="ingredient-text water-text">Water</p>
       </div>
     </main>
-    <script src="./src/index.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>

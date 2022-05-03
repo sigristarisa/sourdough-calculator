@@ -10,28 +10,16 @@ html {
   --sub-text-clr: #deb642;
 }
 
-body {
-  display: grid;
-  width: 100vw;
-  height: 100vh;
-  place-items: center;
-}
-
 main {
   width: 375px;
-  height: 812px;
+  height: 844px;
   padding: 0 20px;
-  display: grid;
-  grid-template-rows: 0.5fr 5fr 1fr 5fr 0.5fr;
-  justify-items: center;
   background-color: var(--sub-clr);
 }
 
 .starter-container {
   border-top: var(--text-clr) 4px solid;
   border-bottom: var(--text-clr) 4px solid;
-  display: grid;
-  place-items: center;
 }
 
 #starter-input {
@@ -52,25 +40,14 @@ main {
   color: var(--text-clr);
 }
 
-.click[type="number"]::placeholder {
-  font-family: "Gravitas One", cursive;
-  color: var(--sub-text-clr);
-}
-
 .flour-quantity-container,
 .water-quantity-container {
-  display: grid;
-  place-items: center;
   width: 100%;
   height: 100%;
   background-color: var(--main-clr);
   font-family: "Gravitas One", cursive;
 }
 
-.flour-text-container {
-  display: grid;
-  align-items: end;
-}
 .ingredient-text {
   width: 100px;
   margin: 0;
@@ -99,8 +76,6 @@ img {
   margin: 32px;
   background-color: white;
   border-radius: 50%;
-  display: grid;
-  place-items: center;
 }
 
 h2 {

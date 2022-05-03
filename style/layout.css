@@ -1,0 +1,15 @@
+.center {
+  display: grid;
+  place-items: center;
+}
+
+.align-item {
+  display: grid;
+  align-items: end;
+}
+
+.justify-item {
+  display: grid;
+  grid-template-rows: 0.5fr 5fr 1fr 5fr 0.5fr;
+  justify-items: center;
+}

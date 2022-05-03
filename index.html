@@ -6,20 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style/style.css" />
     <link rel="stylesheet" href="./style/reset.css" />
+    <link rel="stylesheet" href="./style/layout.css" />
     <title>Sourdough Calculator</title>
   </head>
-  <body>
-    <main>
+  <body class="center">
+    <main class="justify-item">
       <div class="flour-text-container">
         <p class="ingredient-text flour-text">Flour</p>
       </div>
-      <div class="flour-quantity-container">
+      <div class="flour-quantity-container center">
         <h2 id="flour-quantity"></h2>
-        <div class="icon-container">
+        <div class="icon-container center">
           <img src="./assets/flour.png" alt="flour" />
         </div>
       </div>
-      <div class="starter-container">
+      <div class="starter-container center">
         <form autocomplete="off" id="starter-form">
           <input
             type="number"
@@ -29,8 +30,8 @@
           />
         </form>
       </div>
-      <div class="water-quantity-container">
-        <div class="icon-container">
+      <div class="water-quantity-container center">
+        <div class="icon-container center">
           <img src="./assets/pitcher.png" alt="pitcher" />
         </div>
         <h2 id="water-quantity"></h2>
